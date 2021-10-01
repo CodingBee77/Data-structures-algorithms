@@ -1,5 +1,3 @@
-from typing import ClassVar
-
 
 class HashTable:
     def __init__(self):
