@@ -1,7 +1,6 @@
 class TreeNode:
-    def __init__(self, name, designation) -> None:
-        self.name = name
-        self.designation = designation
+    def __init__(self, data) -> None:
+        self.data = data
         self.children = []
         self.parent = None
 
@@ -20,11 +19,13 @@ class TreeNode:
 
         return level
 
-    def print_tree(self, parameter):
+
+    def print_tree(self):
         spaces = ' ' * self.get_level() *3
         prefix = spaces + "|__" if self.parent else ""
 
-        print( prefix + self.name + (self.designation))
+            
+        print( prefix + self.data)
 
         if self.children:
             for child in self.children:
@@ -52,8 +53,8 @@ def build_product_tree():
     root.add_child(cellphone)
     root.add_child(tv)
 
-
     return root
+
 
 
 if __name__ == '__main__':
