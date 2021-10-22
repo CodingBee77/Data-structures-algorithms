@@ -8,7 +8,6 @@ Hashtable - in Python called dictionary. Implementation of
 this datastructure, get, add and delete method.
 Implementation include collision handling using chaining ( insert key value pairs with the same hash function value into Linked List).
 Hashtable_linear_probing - another way to manage collisions using linear probing
-Stack
-Queue
+Stack and Queues - structures which might be implemented using regular lists or deque from collection module, exercises included
 Tree_general
 Binary_tree
